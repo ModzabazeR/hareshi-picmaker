@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#332228] text-white;
+    font-family: 'Noto Sans Thai', sans-serif;
+  }
+  select, option {
+    @apply text-black;
+  }
+  .font {
+    font-family: 'DBHelvaticaX', 'Noto Sans Thai', sans-serif;
+  }
+}
+
+@font-face {
+  font-family: 'DBHelvaticaX';
+  src: url('DB Helvethaica X.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'DBHelvaticaX';
+  src: url('DB Helvethaica X Bd.ttf') format('truetype');
+  font-weight: bold;
+}
