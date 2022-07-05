@@ -81,11 +81,11 @@ function App() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center text-center h-screen">
+    <div className="flex flex-col justify-center items-center text-center lg:h-screen">
       <div className="font font-bold hidden">ทดสอบ</div>
       <img src={logoStyle} className="hidden" ref={logoRef} />
       <main className="max-w-screen-md space-y-4 p-8">
-        <h1 className="text-2xl md:text-3xl lg:text-2xl font-bold">สร้างปกกระทู้สไตล์ฮาเรชิ</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">สร้างปกกระทู้สไตล์ฮาเรชิ</h1>
         <h2>{"(ฟอนต์ไม่ขึ้นลองกด preview ใหม่)"}</h2>
 
         <input type="file" onChange={handleChange} />
@@ -133,13 +133,13 @@ function App() {
         <div className="w-full flex justify-between">
         <button
             type="submit"
-            className="rounded-md bg-white text-black py-2 px-4 hover:bg-slate-200 w-1/4"
+            className="rounded-md bg-white text-black py-2 px-4 hover:bg-slate-200 w-1/3"
             onClick={handlePreview}
           >
             Preview
           </button>
           <a
-            className="rounded-md bg-white text-black py-2 px-4 hover:bg-slate-200 w-1/4"
+            className="rounded-md bg-white text-black py-2 px-4 hover:bg-slate-200 w-1/3"
             href={previewImg}
             download="thumbnail.png"
           >
