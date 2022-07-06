@@ -81,7 +81,7 @@ function App() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center text-center lg:h-screen">
+    <div className="flex flex-col justify-center items-center text-center lg:h-screen m-8">
       <div className="font font-bold hidden">ทดสอบ</div>
       <img src={logoStyle} className="hidden" ref={logoRef} />
       <main className="max-w-screen-md space-y-4 p-8">
