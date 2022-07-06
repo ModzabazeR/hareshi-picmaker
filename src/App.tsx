@@ -128,7 +128,7 @@ function App() {
           onLoad={handlePreview}
         />
         <canvas className="hidden" width={1280} height={720} ref={canvasRef}></canvas>
-        <img className="w-full" src={previewImg} alt="ไม่สามารถโหลดภาพได้" />
+        <img className="w-full" src={previewImg} alt="thumbnail.png" />
 
         <div className="w-full flex justify-between">
         <button
