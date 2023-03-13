@@ -34,19 +34,19 @@ function App() {
 
         // title
         ctx.textBaseline = "bottom";
-        ctx!.font = "bold 72px DBHelvaticaX";
+        ctx!.font = "bold 60px LineSeed";
         ctx.fillStyle = "#fff";
         const width1 = ctx.measureText(title).width;
-        ctx.fillRect(90, 444, width1+40, 88);
+        ctx.fillRect(90, 414, width1+40, 110);
         ctx.fillStyle = "#000";
-        ctx.fillText(title, 110, 530);
+        ctx.fillText(title, 110, 510);
 
         // subtitle
-        ctx!.font = "bold 94px DBHelvaticaX";
+        ctx!.font = "bold 78px LineSeed";
         ctx.fillStyle = "#FF769D";
         const width2 = ctx.measureText(subtitle).width;
-        ctx.fillRect(90, 544, width2+40, 115);
-        ctx.fillRect(60, 444, 10, 215);
+        ctx.fillRect(90, 544, width2+40, 130);
+        ctx.fillRect(60, 414, 10, 261);
         ctx.fillStyle = "white";
         ctx.fillText(subtitle, 110, 655);
         
@@ -79,6 +79,8 @@ function App() {
       }
     }
   }, []);
+
+  useEffect(handlePreview, [title, subtitle]);
 
   return (
     <div className="flex flex-col justify-center items-center text-center lg:h-screen m-8">

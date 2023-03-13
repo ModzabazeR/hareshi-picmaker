@@ -11,18 +11,30 @@
     @apply text-black;
   }
   .font {
-    font-family: 'DBHelvaticaX', 'Noto Sans Thai', sans-serif;
+    font-family: 'LineSeed', 'Noto Sans Thai', sans-serif;
   }
 }
 
 @font-face {
-  font-family: 'DBHelvaticaX';
-  src: url('DB Helvethaica X.ttf') format('truetype');
+  font-family: 'LineSeed';
+  src: url('LINESeedSansTH_Rg.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'DBHelvaticaX';
-  src: url('DB Helvethaica X Bd.ttf') format('truetype');
+  font-family: 'LineSeed';
+  src: url('LINESeedSansTH_Bd.ttf') format('truetype');
   font-weight: bold;
+}
+
+@font-face {
+  font-family: 'LineSeed';
+  src: url('LINESeedSansTH_XBd.ttf') format('truetype');
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: 'LineSeed';
+  src: url('LINESeedSansTH_Th.ttf') format('truetype');
+  font-weight: lighter;
 }
