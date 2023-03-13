@@ -80,7 +80,7 @@ function App() {
     }
   }, []);
 
-  useEffect(handlePreview, []);
+  document.fonts.ready.then(handlePreview)
   useEffect(handlePreview, [title, subtitle]);
 
   return (
