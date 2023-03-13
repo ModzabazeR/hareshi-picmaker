@@ -80,6 +80,7 @@ function App() {
     }
   }, []);
 
+  useEffect(handlePreview, []);
   useEffect(handlePreview, [title, subtitle]);
 
   return (
