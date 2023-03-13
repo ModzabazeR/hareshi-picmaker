@@ -81,7 +81,7 @@ function App() {
   }, []);
 
   // document.fonts.ready.then(handlePreview);
-  useEffect(handlePreview, [title, subtitle]);
+  useEffect(handlePreview, [title, subtitle, logoStyle]);
 
   return (
     <div className="flex flex-col justify-center items-center text-center lg:h-screen m-8">
